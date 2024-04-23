@@ -7,13 +7,76 @@
 /* *********************************** */
 
 /* Tipografía */
+/* REGULAR */
 @font-face {
-  font-family: "";
-  src: url("") format("woff2"), url("") format("woff");
+    font-family: "montserratRegular";
+    src: url("../font/montserrat-regular.woff2") format("woff2"),
+        url("../font/montserrat-regular.woff") format("woff");
+}
+/* BOLD */
+@font-face {
+    font-family: "montserratBold";
+    src: url("../font/montserrat-bold.woff2") format("woff2"),
+        url("../font/montserrat-bold.woff") format("woff");
+}
+/* ITALIC */
+@font-face {
+    font-family: "montserratItalic";
+    src: url("../font/montserrat-italic.woff2") format("woff2"),
+        url("../font/montserrat-italic.woff") format("woff");
+}
+
+/* ******************************** */
+/* VARIABLES */
+/* Colores */
+:root {
+    --color-bgMenu: #464552;
+    --color-bgBody: #B7D4E9;
+    --color-linkAction: #fdfdfd;
+    --color-link: #707070;
+}
+
+a{
+  color: var(--color-link);
 }
 
 /* ******************************** */
 
-/* Colores */
+body{
+  display: flex;
+  justify-content: center;
+}
 
-/* ******************************** */
+.container {
+  width: 100%;
+  height: 100px;
+  padding: 50px 100px;
+  max-width: 1366px;
+}
+
+
+/* HEADER */
+header{
+  display: flex;
+}
+
+.logotipo {
+}
+.logotipo_logo {
+}
+.menu {
+}
+.menu__home {
+}
+.menu__products {
+}
+.menu__aboutus {
+}
+.menu__contacts {
+}
+.ecommerce {
+}
+.ecommerce__lupa {
+}
+.ecommerce__carrito {
+}
