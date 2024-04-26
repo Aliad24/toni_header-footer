@@ -104,5 +104,8 @@ header{
 
   }
   & .ecommerce__carrito {
+    background: linear-gradient(180deg, #FFF 50%, #25262A 50%, #25262A 100%);
   }
 }
+
+
