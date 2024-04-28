@@ -31,81 +31,160 @@
 /* Colores */
 :root {
     --color-bgMenu: #464552;
-    --color-bgBody: #B7D4E9;
+    --color-bgBody: #b7d4e9;
     --color-linkAction: #fdfdfd;
     --color-link: #9c9c9c;
     /* Tamaños */
     --size-screen: 1366px;
 }
 
-a{
-  color: var(--color-link);
+a {
+    color: var(--color-link);
 }
-a:hover{
-  color: var(--color-linkAction);
+a:hover {
+    color: var(--color-linkAction);
 }
 
-.action{
-  color: var(--color-linkAction);
-  text-decoration: underline;
+.action {
+    color: var(--color-linkAction);
+    text-decoration: underline;
 }
 
 /* ******************************** */
-html{
-  font-size: 16px;
-  font-family: 'montserratRegular', sans-serif;
+html {
+    font-size: 16px;
+    font-family: "montserratRegular", sans-serif;
 }
 
-body{
-  display: flex;
-  justify-content: center;
-  background-color: var(--color-bgBody);
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container {
-  width: 100%;
-  height: 100px;
-  max-width: var(--size-screen);
+    width: 100%;
+    max-width: var(--size-screen);
 }
 
-
 /* HEADER */
-header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 50px 100px;
-  background-color: var(--color-bgMenu);
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+    background-color: var(--color-bgMenu);
 }
 
 .logotipo {
-  & .logotipo_logo {
-    font-family: 'montserratBold';
-  }
+    & .logotipo_logo {
+        font-family: "montserratBold";
+    }
 }
 
-
 .menu {
-  display: flex;
-  gap: 20px;
-  & .menu__home {
+    display: flex;
+    gap: 20px;
+    /* & .menu__home {
   }
   & .menu__products {
   }
   & .menu__aboutus {
   }
   & .menu__contacts {
-  }
+  } */
 }
 .ecommerce {
-  display: flex;
-  gap: 20px;
-  & .ecommerce__lupa {
+    display: flex;
+    gap: 20px;
+    /* & .ecommerce__lupa {
 
-  }
-  & .ecommerce__carrito {
-    background: linear-gradient(180deg, #FFF 50%, #25262A 50%, #25262A 100%);
-  }
+  } */
+    & .ecommerce__carrito {
+        background: linear-gradient(
+            180deg,
+            #fff 50%,
+            #25262a 50%,
+            #25262a 100%
+        );
+    }
 }
 
+/* ********************************** */
+/* MAIN */
+/* ********************************** */
+main{
+    padding: 100px 50px;
 
+    & p{
+        text-align: justify;
+    }
+}
+/* ********************************** */
+/* FOOTER */
+/* ********************************** */
+/* Section Imágenes */
+footer{
+  width: 100%;
+  background: linear-gradient(180deg, #FFF 0%, #FFF 10%, #25262A 10%, #25262A 100%, #25262A 100%);  
+  display: flex;
+  justify-content: center;
+  color: #fff;;
+}
+.footer-img {
+  display: flex;
+  justify-content: space-between;
+  
+    & footer-img__img1 {
+    }
+    & footer-img__img2 {
+    }
+    & footer-img__img3 {
+    }
+    & footer-img__img4 {
+    }
+}
+.footerdescripcion {
+    & footerdescripcion__logo-des {
+    }
+    & footerdescripcion__suport {
+    }
+    & footerdescripcion__shop {
+    }
+    & footerdescripcion__company {
+    }
+    & footerdescripcion__contact {
+    }
+}
+.logodescript {
+}
+.logo {
+}
+.rrss {
+    & rrss__facebook {
+    }
+    & rrss__twitter {
+    }
+    & rrss__youtube {
+    }
+}
+.titulo-li {
+}
+.copyright {
+    & copyright__copy {
+    }
+    & copyright__tarjetas {
+    }
+}
+.tarjetas {
+    & tarjetas__visa {
+    }
+    & tarjetas__mastercard {
+    }
+    & tarjetas__american {
+    }
+    & tarjetas__paypal {
+    }
+    & tarjetas__stripe {
+    }
+}
