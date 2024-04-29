@@ -114,6 +114,12 @@ header {
 /* MAIN */
 /* ********************************** */
 main{
+    columns: 2;
+    column-gap: 30px;
+
+    & img{
+        padding: 20px 0;
+    }
     padding: 100px 50px;
 
     & p{
@@ -135,48 +141,68 @@ footer{
   display: flex;
   justify-content: space-between;
   
-    & footer-img__img1 {
+    & .footer-img__img1 {
     }
-    & footer-img__img2 {
+    & .footer-img__img2 {
     }
-    & footer-img__img3 {
+    & .footer-img__img3 {
     }
-    & footer-img__img4 {
+    & .footer-img__img4 {
     }
 }
+/* SECTION CENTRAL */
 .footerdescripcion {
-    & footerdescripcion__logo-des {
+    margin: 80px 0;
+    columns: 5;
+    & .footerdescripcion__logo-des {
     }
-    & footerdescripcion__suport {
+    & .footerdescripcion__suport {
     }
-    & footerdescripcion__shop {
+    & .footerdescripcion__shop {
     }
-    & footerdescripcion__company {
+    & .footerdescripcion__company {
     }
-    & footerdescripcion__contact {
+    & .footerdescripcion__contact {
+        & li{
+            display: flex;
+            gap: 10px;
+        }
     }
 }
 .logodescript {
+    margin-bottom: 30px;
 }
 .logo {
 }
 .rrss {
-    & rrss__facebook {
+    display: flex;
+    gap: 10px;
+    & .rrss__facebook {
     }
-    & rrss__twitter {
+    & .rrss__twitter {
     }
-    & rrss__youtube {
+    & .rrss__youtube {
     }
 }
 .titulo-li {
+    margin-bottom: 20px;
+    font-weight: 900;
+    text-transform: capitalize;
 }
+
 .copyright {
-    & copyright__copy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .copyright__copy {
     }
-    & copyright__tarjetas {
+    & .copyright__tarjetas {
+        display: flex;
+        gap: 10px;
     }
 }
-.tarjetas {
+/* .tarjetas {
     & tarjetas__visa {
     }
     & tarjetas__mastercard {
@@ -187,4 +213,4 @@ footer{
     }
     & tarjetas__stripe {
     }
-}
+} */
